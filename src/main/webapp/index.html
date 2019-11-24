@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda</title>
+</head>
+<body>
+<form method="post" action="/agenda">
+    <fieldset>
+        <legend>Pessoa</legend>
+        <p>
+            <label for="id">ID: <input id="id" nome="id" type="number" disabled></label>
+        </p>
+        <p>
+            <label for="nome">Nome: <input id="nome" nome="nome" type="text" required></label>
+        </p>
+        <p>
+            <label for="tel">Telefone: <input id="tel" nome="tel" type="text" required></label>
+        </p>
+        <p>
+            <label for="email">E-Mail: <input id="email" nome="email" type="email" required></label>
+        </p>
+        <p>
+            <label for="end">Endereço: <input id="end" nome="end" type="text" required></label>
+        </p>
+        <p>
+            <label for="data">Data de Nascimento: <input id="data" nome="data" type="date" required></label>
+        </p>
+        <p>
+            <input nome="Limpar" type="reset" required>
+            <input nome="Salvar" type="submit" required>
+        </p>
+    </fieldset>
+</form>
+</body>
+</html>
