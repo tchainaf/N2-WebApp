@@ -90,7 +90,7 @@ public class PessoaDAO extends PadraoDAO{
         return null;
     }
 
-    public ObservableList<Pessoa> Listar(boolean flag) {
+    public ObservableList<Pessoa> Listar() {
         ObservableList<Pessoa> list = FXCollections.observableArrayList();
         try {
             CallableStatement stm = conn.prepareCall("{call SP_LISTA_PESSOA}");
